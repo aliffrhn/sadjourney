@@ -1,19 +1,20 @@
 import {StyleSheet} from 'react-native'
 
 const color  = {
-    white : "#fff"
+    white : '#fff',
+    blue : '#72a5ff'
 }
 
 export const styles = StyleSheet.create({
     container : {
         backgroundColor : color.white,
-        marginBottom : 50
+        paddingBottom : 35
     },
     logo : {
         alignItems : 'center',
     },
     img_logo : {
-        width : 100,
+        width : 200,
         height : 100,
         marginTop : 100
     },
@@ -24,12 +25,31 @@ export const styles = StyleSheet.create({
     inpText : { 
         borderRadius: 40,
         borderWidth: 0.5,
-        borderColor: '#007acc',
+        borderColor: color.blue,
         height : 60 
     },
     inpTitle : {
         marginBottom : 10,
         fontSize : 17
+    },
+    btnSignup : {
+        marginTop : 30,
+        borderRadius: 40,
+        backgroundColor : color.blue,
+        height : 60,
+        marginHorizontal : 25
+    },
+    btnText : {
+        alignItems : 'center',
+        padding : 15
+    },
+    btnStext : {
+        fontSize : 20,
+        color : color.white
+    },
+    hlinkSignin : {
+        alignItems : 'center',
+        marginTop : 10
     }
 }) 
 
