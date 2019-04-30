@@ -6,8 +6,8 @@ const color  = {
 
 export const styles = StyleSheet.create({
     container : {
-        
-        backgroundColor : color.white
+        backgroundColor : color.white,
+        marginBottom : 50
     },
     logo : {
         alignItems : 'center',
