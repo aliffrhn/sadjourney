@@ -9,7 +9,7 @@ export default class InputBoxlogin extends Component {
         return(
           <View style = {styles.vinpText}>
             <Text style = {styles.inpTitle}>{this.props.title}</Text>
-            <TextInput style = {styles.inpText} placeholder = {this.props.placeholder} />
+            <TextInput style = {styles.inpText} keyboardType = {this.props.keytype} secureTextEntry = {this.props.secure} placeholder = {this.props.placeholder} />
           </View>
         )
     }

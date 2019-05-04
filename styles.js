@@ -26,7 +26,8 @@ export const styles = StyleSheet.create({
         borderRadius: 40,
         borderWidth: 0.5,
         borderColor: color.blue,
-        height : 60 
+        height : 60,
+        paddingHorizontal : 25
     },
     inpTitle : {
         marginBottom : 10,

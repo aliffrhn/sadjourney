@@ -11,10 +11,10 @@ export default class SignupContainer extends Component{
             <ScrollView>
                 <View style = {styles.container}>
                 <View style = {styles.logo}><Image style={styles.img_logo} source={require('./images/signup/2.png')}/></View>
-                <InputBoxlogin style = {{marginTop : 50}} title = 'Full Name' placeholder = '    Full name'/>
-                <InputBoxlogin title = 'Handphone' placeholder = '    Example: 0881228922984'/>
-                <InputBoxlogin title = 'Email' placeholder = '    Email'/>
-                <InputBoxlogin title = 'Password' placeholder = '    Password'/>
+                <InputBoxlogin style = {{marginTop : 50}} title = 'Full Name'  placeholder = 'Full name'/>
+                <InputBoxlogin title = 'Handphone' keytype = 'number-pad' placeholder = 'Example: 0881228922984'/>
+                <InputBoxlogin title = 'Email' placeholder = 'Email'/>
+                <InputBoxlogin title = 'Password' secure = {true} placeholder = 'Password'/>
                 <View style = {styles.vinpText}>
                     <Text style = {styles.inpTitle}>Gender</Text>
                     <Picker>
