@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native'
 
-const color  = {
+export const color  = {
     white : '#fff',
     blue : '#72a5ff'
 }
@@ -49,7 +49,8 @@ export const styles = StyleSheet.create({
     },
     hlinkSignin : {
         alignItems : 'center',
-        marginTop : 10
+        marginTop : 10,
+        flexDirection : 'column'
     }
 }) 
 

@@ -20,6 +20,11 @@ export default class SigninContainer extends Component{
                         </Text>
                     </View>
                 </TouchableOpacity>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('')}>
+                    <Text style={{color : color.blue}}>
+                        Forgot Password?
+                    </Text>
+                </TouchableOpacity>
             </View>
         )
     }

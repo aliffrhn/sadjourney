@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { View, ScrollView, Text, Image, TouchableOpacity, Picker } from 'react-native'
 
 import InputBoxlogin from './inputBoxlogin.js'
-import { styles } from './styles.js' 
+import { styles, color } from './styles.js' 
 
 export default class SignupContainer extends Component{
 
@@ -22,8 +22,7 @@ export default class SignupContainer extends Component{
                     <Picker.Item label='Female' value='2' />
                     </Picker>
                 </View>
-                <TouchableOpacity style = {styles.btnSignup}
-                onPress={() => this.props.navigation.navigate('Signin')}>
+                <TouchableOpacity style = {styles.btnSignup}>
                 <View style = {styles.btnText}>
                     <Text style = {styles.btnStext}>
                         Sign Up
@@ -34,8 +33,8 @@ export default class SignupContainer extends Component{
                     <Text>
                         Have an account? 
                     </Text>
-                    <TouchableOpacity>
-                        <Text>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Signin')}>
+                        <Text style={{color : color.blue}}>
                             Sign In 
                         </Text>
                     </TouchableOpacity>    
