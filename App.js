@@ -5,6 +5,7 @@ import { createStackNavigator, createSwitchNavigator, createAppContainer } from 
 
 import SigninContainer from './signinContainer.js'
 import SignupContainer from './signupContainer.js'
+import HomeContainer from './homeContainer.js'
 
 export default class App extends Component{
   
@@ -23,7 +24,7 @@ export default class App extends Component{
 
 const RootStack = createSwitchNavigator(
   {
-    Signup: SignupContainer,
+    Signup: HomeContainer,
     Signin: SigninContainer
   },
   {

@@ -49,9 +49,14 @@ export const styles = StyleSheet.create({
         color : color.white
     },
     hlinkSignin : {
-        alignItems : 'center',
+        justifyContent : 'center',
         marginTop : 10,
-        flexDirection : 'column'
+        flexDirection : 'row'
+    },
+    aForgotp : {
+        marginTop : 30,
+        marginRight : 25,
+        alignItems : 'flex-end',
     }
 }) 
 

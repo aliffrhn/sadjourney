@@ -3,29 +3,42 @@ import { View, TouchableOpacity, Text, Image } from 'react-native'
 import { styles, color } from './styles';
 
 import InputBoxLogin from './inputBoxlogin.js'
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default class SigninContainer extends Component{
     
     render(){
         
         return(
-            <View style = {styles.container}>
-                <View style = {styles.logo}><Image style={styles.img_logo} source={require('./images/signup/2.png')}/></View>
-                <InputBoxLogin title = 'Email' placeholder = '    Email' />
-                <InputBoxLogin title = 'Password' placeholder = '    Password'/>
-                <TouchableOpacity style = {styles.btnSignup}>
-                    <View style = {styles.btnText}>
-                        <Text style = {styles.btnStext}>
-                        Sign In
+            <ScrollView>
+                <View style = {styles.container}>
+                    <View style = {styles.logo}><Image style={styles.img_logo} source={require('./images/signup/2.png')}/></View>
+                    <InputBoxLogin title = 'Email' placeholder = 'Email' />
+                    <InputBoxLogin title = 'Password' placeholder = 'Password'/>
+                    <TouchableOpacity style = {styles.aForgotp} onPress={() => this.props.navigation.navigate('')}>
+                        <Text style = {{color : color.blue}}>
+                            Forgot Password?
                         </Text>
-                    </View>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('')}>
-                    <Text style={{color : color.blue}}>
-                        Forgot Password?
+                    </TouchableOpacity>
+                    <TouchableOpacity style = {styles.btnSignup}>
+                        <View style = {styles.btnText}>
+                            <Text style = {styles.btnStext}>
+                            Sign In
+                            </Text>
+                        </View>
+                    </TouchableOpacity>
+                    <View style = {styles.hlinkSignin}>
+                    <Text style = {{marginRight : 5}}>
+                        Don't Have an account? 
                     </Text>
-                </TouchableOpacity>
-            </View>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Signin')}>
+                        <Text style={{color : color.blue}}>
+                            Sign Up 
+                        </Text>
+                    </TouchableOpacity>    
+                </View>
+                </View>
+            </ScrollView>
         )
     }
 }

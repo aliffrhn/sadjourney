@@ -7,6 +7,7 @@ import { styles, color } from './styles.js'
 export default class SignupContainer extends Component{
 
     render(){
+        
         return(
             <ScrollView>
                 <View style = {styles.container}>
@@ -30,7 +31,7 @@ export default class SignupContainer extends Component{
                 </View>
                 </TouchableOpacity>
                 <View style = {styles.hlinkSignin}>
-                    <Text>
+                    <Text style = {{marginRight : 5}}>
                         Have an account? 
                     </Text>
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('Signin')}>
