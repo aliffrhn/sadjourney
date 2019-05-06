@@ -13,21 +13,29 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+will be published soon
 ```
 
 ### Installing
 
+```
 will be published soon
+```
 
 ## Deployment
 
+```
 will be published soon
+```
 
 ## Built With
 
+```
 will be published soon
+```
 
 ## Authors
 
+```
 will be published soon
+```
