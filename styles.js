@@ -2,7 +2,8 @@ import {StyleSheet} from 'react-native'
 
 export const color  = {
     white : '#fff',
-    blue : '#72a5ff'
+    blue : '#72a5ff',
+    black : '#000000'
 }
 
 export const styles = StyleSheet.create({
@@ -57,6 +58,61 @@ export const styles = StyleSheet.create({
         marginTop : 30,
         marginRight : 25,
         alignItems : 'flex-end',
+    },
+    hcontainer : {
+        backgroundColor : color.white,
+        paddingBottom : 35,
+        paddingTop : 25,
+        paddingLeft : 25
+    },
+    headerPer : {
+        flexDirection : 'row'
+    },
+    personImg : {
+        height : 65,
+        width : 65,
+        borderRadius : 65 / 2
+    },
+    personNT : {
+        marginLeft : 15
+    },
+    personName : {
+        fontSize : 20,
+        fontWeight : 'bold',
+        color : color.black
+    },
+    personDesc : {
+        marginTop : 13,
+        color : color.black
+    },
+    bestDesign : {
+        marginTop : 50
+    },
+    tbestDesign : {
+        fontSize : 27,
+        fontWeight : 'bold',
+        color : color.black
+    },
+    bdCard : {
+        height : 400,
+        width : 340,
+        borderRadius : 10,
+    },
+    bdContainer : {
+        marginTop : 25
+    },
+    desContainer : {
+        position : 'absolute',
+        width : 250,
+        height : 75,
+        borderRadius : 7,
+        backgroundColor : 'white',
+        top : 350,
+        left : 45,
+    },
+    desCard : {
+        padding : 13,
+        flexDirection : 'row'
     }
 }) 
 
