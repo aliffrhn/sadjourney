@@ -113,6 +113,31 @@ export const styles = StyleSheet.create({
     desCard : {
         padding : 13,
         flexDirection : 'row'
+    },
+    hCard : {
+        fontSize : 20,
+        fontWeight : 'bold', 
+        color : 'black'
+    },
+    tbtnContainer : {
+        justifyContent : 'center',
+        marginLeft : 45
+    },
+    tCard : {
+        backgroundColor : color.blue, 
+        borderRadius : 35/2,
+        height: 35,
+        width : 35
+    },
+    tbtnCard : {
+        height : 19,
+        width : 19,
+        left : 9,
+        top : 8
+    },
+    trndCard : {
+        marginTop : 60,
+        flexDirection : 'row'
     }
 }) 
 

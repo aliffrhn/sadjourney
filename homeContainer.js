@@ -29,26 +29,35 @@ export default class Home extends Component{
                             <View style = {styles.desContainer}>
                                 <View style = {styles.desCard}>
                                     <View>
-                                        <Text style = {{fontSize : 20, fontWeight : 'bold', color : 'black'}}>
+                                        <Text style = {styles.hCard}>
                                             American Style
                                         </Text>
                                         <Text style = {{marginTop : 1}}>
                                             23 style design
                                         </Text>
                                     </View>
-                                    <View style = {{justifyContent : 'center', marginLeft : 45}}>
-                                        <TouchableOpacity style = {{backgroundColor : color.blue, borderRadius : 35/2, height: 35, width : 35}}>
-
+                                    <View style = {styles.tbtnContainer}>
+                                        <TouchableOpacity style = {styles.tCard}>
+                                            <Image style = {styles.tbtnCard} source = {require('./images/icons/next.png')}/>
                                         </TouchableOpacity>
                                     </View>
                                 </View>
                             </View>
                         </View>
                     </View>
-                    <View > 
-                        <Text>
-                            Trending
-                        </Text>
+                    <View style = {styles.trndCard}> 
+                        <View>
+                            <Text style = {{fontSize : 17, fontWeight : 'bold', color : 'black'}}>
+                                Trending
+                            </Text>
+                        </View>
+                        <View style = {{justifyContent : 'flex-end', marginLeft : 190}}>
+                            <TouchableOpacity >
+                                <Text style = {{color : color.blue}}>
+                                    See More
+                                </Text>
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>
             </ScrollView>
