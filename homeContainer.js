@@ -2,8 +2,14 @@ import React, { Component } from 'react'
 import { View, ScrollView, Image, Text, TouchableOpacity } from 'react-native'
 import { styles, color } from './styles'
 
-export default class Home extends Component{
+import Listbd from './components/Listbd'
+import Listtrd from './components/Listtrd';
 
+export default class Home extends Component{
+    //TODO: BIKIN STATE for icon love
+    state = {
+        ilove: false
+    }
     render(){
 
         return(
@@ -24,41 +30,29 @@ export default class Home extends Component{
                         <Text style = {styles.tbestDesign}>
                             Best Design
                         </Text>
-                        <View style = {styles.bdContainer}>
-                            <Image style = {styles.bdCard} source = {require('./images/home/livroom.jpg')}/>
-                            <View style = {styles.desContainer}>
-                                <View style = {styles.desCard}>
-                                    <View>
-                                        <Text style = {styles.hCard}>
-                                            American Style
-                                        </Text>
-                                        <Text style = {{marginTop : 1}}>
-                                            23 style design
-                                        </Text>
-                                    </View>
-                                    <View style = {styles.tbtnContainer}>
-                                        <TouchableOpacity style = {styles.tCard}>
-                                            <Image style = {styles.tbtnCard} source = {require('./images/icons/next.png')}/>
-                                        </TouchableOpacity>
-                                    </View>
-                                </View>
+                    </View>
+                </View>
+                <View style = {{backgroundColor : color.white}}>
+                    <Listbd />
+                </View>
+                <View style = {styles.hcontainer}>
+                    <View>
+                        <View style = {styles.trndCard}> 
+                            <View>
+                                <Text style = {{fontSize : 17, fontWeight : 'bold', color : 'black'}}>
+                                    Trending
+                                </Text>
+                            </View>
+                            <View style = {{justifyContent : 'flex-end', marginLeft : 190}}>
+                                <TouchableOpacity onPress = {() => this.props.navigation.navigate('DetailT')} >
+                                    <Text style = {{color : color.blue}}>
+                                        See More
+                                    </Text>
+                                </TouchableOpacity>
                             </View>
                         </View>
-                    </View>
-                    <View style = {styles.trndCard}> 
-                        <View>
-                            <Text style = {{fontSize : 17, fontWeight : 'bold', color : 'black'}}>
-                                Trending
-                            </Text>
-                        </View>
-                        <View style = {{justifyContent : 'flex-end', marginLeft : 190}}>
-                            <TouchableOpacity >
-                                <Text style = {{color : color.blue}}>
-                                    See More
-                                </Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
+                        <Listtrd />
+                    </View> 
                 </View>
             </ScrollView>
         )

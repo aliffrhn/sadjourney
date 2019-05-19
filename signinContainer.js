@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
-import { View, TouchableOpacity, Text, Image } from 'react-native'
+import { View, TouchableOpacity, Text, Image, ScrollView } from 'react-native'
 import { styles, color } from './styles';
 
 import InputBoxLogin from './inputBoxlogin.js'
-import { ScrollView } from 'react-native-gesture-handler';
 
 export default class SigninContainer extends Component{
     
@@ -20,7 +19,7 @@ export default class SigninContainer extends Component{
                             Forgot Password?
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style = {styles.btnSignup}>
+                    <TouchableOpacity style = {styles.btnSignup} onPress = {() => this.props.navigation.navigate('HomeC')}>
                         <View style = {styles.btnText}>
                             <Text style = {styles.btnStext}>
                             Sign In
