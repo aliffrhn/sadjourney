@@ -1,41 +1,41 @@
-import React, {Component} from 'react'
-import {View, Text, Image, FlatList, TouchableOpacity} from 'react-native'
-
+import React, { Component } from 'react'
+import { View, Text, Image, FlatList, TouchableOpacity } from 'react-native'
 import { styles } from '../assets/styles/styles'
-const show_first= [
+
+const show_first = [
     {
         key: '1',
         name:'America',
-        image:require('../images/home/carpet-1853203_1920.jpg')
+        image:require('../assets/images/home/carpet-1853203_1920.jpg')
     },
     {
         key: '2',
         name:'America',
-        image:require('../images/home/chairs-2181960_1920.jpg')
+        image:require('../assets/images/home/chairs-2181960_1920.jpg')
     },
     {
         key: '3',
         name:'America',
-        image:require('../images/home/couch-447484_1920.jpg')
+        image:require('../assets/images/home/couch-447484_1920.jpg')
     },
     {
         key: '4',
         name:'America',
-        image:require('../images/home/couch-1835923_1920.jpg')
+        image:require('../assets/images/home/couch-1835923_1920.jpg')
     },
     {
         key: '5',
         name:'Americano',
-        image:require('../images/home/kitchen-2165756_1920.jpg')
+        image:require('../assets/images/home/kitchen-2165756_1920.jpg')
     },
     {
         key: '6',
         name:'Americano',
-        image:require('../images/home/living-room-2155376_1920.jpg')
+        image:require('../assets/images/home/living-room-2155376_1920.jpg')
     },
 ]
 
-export default class Listcat extends Component{
+export default class ListCategories extends Component{
 
     _renderItems(item){
         
@@ -54,7 +54,7 @@ export default class Listcat extends Component{
                         </View>
                         <View style = {styles.tbtnContainer}>
                             <TouchableOpacity style = {styles.tCard}>
-                                <Image style = {styles.tbtnCard} source = {require('../images/icons/next.png')}/>
+                                <Image style = {styles.tbtnCard} source = {require('../assets/icons/next.png')}/>
                             </TouchableOpacity>
                         </View>
                     </View>

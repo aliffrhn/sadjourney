@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import { View, ScrollView, Image, Text, TouchableOpacity } from 'react-native'
 import { styles, color } from '../assets/styles/styles'
 
-import Listbd from '../Components/listBestdesign'
-import Listtrd from '../Components/listTrending';
+// Import Components
+import ListBestdesign from '../Components/listBestdesign'
+import ListTrending from '../Components/listTrending'
 
 export default class Home extends Component{
     //TODO: BIKIN STATE for icon love
@@ -16,7 +17,7 @@ export default class Home extends Component{
             <ScrollView>
                 <View style = {styles.hcontainer}>
                     <View style = {styles.headerPer}>
-                        <Image style = {styles.personImg} source = {require('./images/home/person.jpg')}/>
+                        <Image style = {styles.personImg} source = {require('../assets/images/home/person.jpg')}/>
                         <View style = {styles.personNT}>
                             <Text style = {styles.personName}>
                                 Anika Putri
@@ -33,7 +34,7 @@ export default class Home extends Component{
                     </View>
                 </View>
                 <View style = {{backgroundColor : color.white}}>
-                    <Listbd />
+                    <ListBestdesign />
                 </View>
                 <View style = {styles.hcontainer}>
                     <View>
@@ -51,7 +52,7 @@ export default class Home extends Component{
                                 </TouchableOpacity>
                             </View>
                         </View>
-                        <Listtrd />
+                        <ListTrending />
                     </View> 
                 </View>
             </ScrollView>

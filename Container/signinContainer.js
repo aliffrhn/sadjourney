@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
 import { View, TouchableOpacity, Text, Image, ScrollView } from 'react-native'
-import { styles, color } from '../assets/styles';
+import { styles, color } from '../assets/styles/styles'
 
-import InputBoxLogin from './inputBoxlogin.js'
+// Import Components
+import InputBoxlogin from '../Components/inputBoxlogin'
 
 export default class SigninContainer extends Component{
     
@@ -11,9 +12,9 @@ export default class SigninContainer extends Component{
         return(
             <ScrollView>
                 <View style = {styles.container}>
-                    <View style = {styles.logo}><Image style={styles.img_logo} source={require('./images/signup/2.png')}/></View>
-                    <InputBoxLogin title = 'Email' placeholder = 'Email' />
-                    <InputBoxLogin title = 'Password' placeholder = 'Password'/>
+                    <View style = {styles.logo}><Image style={styles.img_logo} source={require('../assets/images/signup/2.png')}/></View>
+                    <InputBoxlogin title = 'Email' placeholder = 'Email' />
+                    <InputBoxlogin title = 'Password' placeholder = 'Password'/>
                     <TouchableOpacity style = {styles.aForgotp} onPress={() => this.props.navigation.navigate('')}>
                         <Text style = {{color : color.blue}}>
                             Forgot Password?

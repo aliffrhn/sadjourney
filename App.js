@@ -4,11 +4,11 @@ import { RadioButton } from 'react-native-paper'
 import { createStackNavigator, createSwitchNavigator, createAppContainer } from 'react-navigation'
 import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs"
 
-import SigninContainer from './signinContainer.js'
-import SignupContainer from './signupContainer.js'
-import HomeContainer from './homeContainer.js'
-import DetailTrending from './detailTrending'
-import CategoriesContainer from './categoriesContainer'
+import SigninContainer from './Container/signinContainer'
+import SignupContainer from './Container/signupContainer'
+import HomeContainer from './Container/homeContainer'
+import DetailTrending from './Container/detailTrending'
+import CategoriesContainer from './Container/categoriesContainer'
 
 export default class App extends Component{
   
@@ -26,7 +26,7 @@ export default class App extends Component{
 }
 
 const Botnav = createMaterialBottomTabNavigator({
-  la: { screen: CategoriesContainer }
+  la: { screen: SignupContainer }
 }, {
   initialRouteName: 'la',
   activeColor: '#f0edf6',
@@ -68,4 +68,4 @@ const RootStack = createSwitchNavigator(
   }
 );
 
-const AppContainer = createAppContainer(Botnav);
+const AppContainer = createAppContainer(RootStack);

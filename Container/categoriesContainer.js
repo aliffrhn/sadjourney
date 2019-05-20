@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
-import {View,Text,ScrollView, TextInput} from 'react-native'
-import {styles, color} from '../assets/styles/styles'
+import React, { Component } from 'react'
+import { View, Text, ScrollView, TextInput } from 'react-native'
+import { styles, color } from '../assets/styles/styles'
 
-import Listcat from '../Components/listCategories'
-import InputBoxLogin from './inputBoxlogin'
+// Import Components
+import ListCategories from '../Components/listCategories'
 
 export default class CategoriesContainer extends Component{
 
@@ -20,7 +20,7 @@ export default class CategoriesContainer extends Component{
                     <View style = {styles.vsinpText}>
                         <TextInput style = {styles.sinpText} placeholder = 'Search Your Design' />
                     </View>
-                    <Listcat />
+                    <ListCategories />
                 </View>
             </ScrollView>
         )

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { View, ScrollView, Text, Image, TouchableOpacity, Picker } from 'react-native'
+import { styles, color } from '../assets/styles/styles' 
 
-import InputBoxlogin from './inputBoxlogin.js'
-import { styles, color } from '../assets/styles.js/index.js' 
+// Import Components
+import InputBoxlogin from '../Components/inputBoxlogin'
 
 export default class SignupContainer extends Component{
 
@@ -11,7 +12,7 @@ export default class SignupContainer extends Component{
         return(
             <ScrollView>
                 <View style = {styles.container}>
-                <View style = {styles.logo}><Image style={styles.img_logo} source={require('./images/signup/2.png')}/></View>
+                <View style = {styles.logo}><Image style={styles.img_logo} source={require('../assets/images/signup/2.png')}/></View>
                 <InputBoxlogin style = {{marginTop : 50}} title = 'Full Name'  placeholder = 'Full name'/>
                 <InputBoxlogin title = 'Handphone' keytype = 'number-pad' placeholder = 'Example: 0881228922984'/>
                 <InputBoxlogin title = 'Email' placeholder = 'Email'/>

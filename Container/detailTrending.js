@@ -1,8 +1,9 @@
-import React, {Component} from 'react'
-import {View, Text, Image, ScrollView} from 'react-native'
-import {styles, color} from '../assets/styles' 
+import React, { Component } from 'react'
+import { View, Text, ScrollView } from 'react-native'
+import { styles } from '../assets/styles/styles'
 
-import Listdtrd from './components/Listdtrd'
+// Import Components
+import ListDetailtrending from '../Components/listDetailtrending'
 
 export default class DetailTrending extends Component{
     
@@ -14,7 +15,7 @@ export default class DetailTrending extends Component{
                     <Text style = {styles.htrnd}>
                         Trending
                     </Text>  
-                    <Listdtrd />              
+                    <ListDetailtrending />              
                 </View>
             </ScrollView>
         )
