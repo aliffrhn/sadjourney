@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {View,Text,ScrollView, TextInput} from 'react-native'
-import {styles, color} from '../assets/styles'
+import {styles, color} from '../assets/styles/styles'
 
 import Listcat from '../Components/listCategories'
 import InputBoxLogin from './inputBoxlogin'

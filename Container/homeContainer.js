@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View, ScrollView, Image, Text, TouchableOpacity } from 'react-native'
-import { styles, color } from '../assets/styles'
+import { styles, color } from '../assets/styles/styles'
 
 import Listbd from '../Components/listBestdesign'
 import Listtrd from '../Components/listTrending';

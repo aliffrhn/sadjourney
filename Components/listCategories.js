@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {View, Text, Image, FlatList, TouchableOpacity} from 'react-native'
 
-import { styles } from '../assets/styles'
+import { styles } from '../assets/styles/styles'
 const show_first= [
     {
         key: '1',

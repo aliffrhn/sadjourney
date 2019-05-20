@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {View, FlatList, Image, TouchableOpacity} from 'react-native'
-import {styles} from '../assets/styles'
+import {styles} from '../assets/styles/styles'
 
 const show_first = [
     {
