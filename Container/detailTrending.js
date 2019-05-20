@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {View, Text, Image, ScrollView} from 'react-native'
-import {styles, color} from './styles' 
+import {styles, color} from '../assets/styles' 
 
 import Listdtrd from './components/Listdtrd'
 

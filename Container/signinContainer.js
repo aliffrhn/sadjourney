@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { View, TouchableOpacity, Text, Image, ScrollView } from 'react-native'
-import { styles, color } from './styles';
+import { styles, color } from '../assets/styles';
 
 import InputBoxLogin from './inputBoxlogin.js'
 

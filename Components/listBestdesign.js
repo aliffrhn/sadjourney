@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {View, Text, FlatList, Image, TouchableOpacity} from 'react-native'
 
-import { styles } from '../styles.js'
+import { styles } from '../assets/styles.js/index.js'
 
 const show_first= [
     {

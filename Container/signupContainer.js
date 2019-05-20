@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { View, ScrollView, Text, Image, TouchableOpacity, Picker } from 'react-native'
 
 import InputBoxlogin from './inputBoxlogin.js'
-import { styles, color } from './styles.js' 
+import { styles, color } from '../assets/styles.js/index.js' 
 
 export default class SignupContainer extends Component{
 

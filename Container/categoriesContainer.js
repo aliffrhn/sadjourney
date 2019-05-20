@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import {View,Text,ScrollView, TextInput} from 'react-native'
-import {styles, color} from './styles'
+import {styles, color} from '../assets/styles'
 
-import Listcat from './Components/Listcat'
+import Listcat from '../Components/listCategories'
 import InputBoxLogin from './inputBoxlogin'
 
 export default class CategoriesContainer extends Component{

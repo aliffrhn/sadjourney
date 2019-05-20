@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { View, ScrollView, Image, Text, TouchableOpacity } from 'react-native'
-import { styles, color } from './styles'
+import { styles, color } from '../assets/styles'
 
-import Listbd from './Components/Listbd'
-import Listtrd from './Components/Listtrd';
+import Listbd from '../Components/listBestdesign'
+import Listtrd from '../Components/listTrending';
 
 export default class Home extends Component{
     //TODO: BIKIN STATE for icon love

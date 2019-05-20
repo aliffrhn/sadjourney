@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import {View, Text, Image, FlatList, TouchableOpacity} from 'react-native'
+import {View, Image, FlatList, TouchableOpacity} from 'react-native'
 
-import { styles } from '../styles'
+import { styles } from '../assets/styles'
 const show_first= [
     {
         key: '1',
@@ -35,29 +35,17 @@ const show_first= [
     },
 ]
 
-export default class Listcat extends Component{
+export default class Listdtrd extends Component{
 
     _renderItems(item){
         
         return(
-            <View style = {styles.catvContainer}>
-                <Image style = {styles.catCard} source = {item.image}/>
-                <View style = {styles.catContainer}>
-                    <View style = {styles.descatCard}>
-                        <View style = {styles.descatcard}>
-                            <Text style = {styles.hCard}>
-                                {item.name}
-                            </Text>
-                            <Text style = {{marginTop : 1}}>
-                                23 style design
-                            </Text>
-                        </View>
-                        <View style = {styles.tbtnContainer}>
-                            <TouchableOpacity style = {styles.tCard}>
-                                <Image style = {styles.tbtnCard} source = {require('../images/icons/next.png')}/>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
+            <View style = {styles.dtrndCard}>
+                <Image style={styles.dtrndimg} source={item.image}/>
+                <View style={styles.ilovedcontainer}>
+                    <TouchableOpacity>
+                        <Image style={styles.ilovetrnd} source={require('../images/icons/likep.png')}></Image>
+                    </TouchableOpacity>
                 </View>
             </View>
         )
