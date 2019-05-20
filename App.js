@@ -46,7 +46,7 @@ const Botnav = createMaterialBottomTabNavigator({
       } else if (routeName === '') {
         iconName = `ios-checkmark-circle${focused ? '' : '-outline'}`;
       }
-      return <IconComponent name={iconName} size={27} color={tintColor} />;
+      return <IconComponent name={iconName} size={26} color={tintColor} />;
     },
   }),
   initialRouteName: 'Home',
