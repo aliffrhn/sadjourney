@@ -15,7 +15,7 @@ export default class Home extends Component{
 
         return(
             <ScrollView>
-                <View style = {styles.hcontainer}>
+                <View style = {[styles.hcontainer,{paddingTop : 35}]}>
                     <View style = {styles.headerPer}>
                         <Image style = {styles.personImg} source = {require('../assets/images/home/person.jpg')}/>
                         <View style = {styles.personNT}>

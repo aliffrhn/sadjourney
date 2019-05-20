@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 import { RadioButton } from 'react-native-paper'
+import Ionicons from 'react-native-vector-icons/Ionicons'
 import { createStackNavigator, createSwitchNavigator, createAppContainer } from 'react-navigation'
 import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs"
 
@@ -26,12 +27,34 @@ export default class App extends Component{
 }
 
 const Botnav = createMaterialBottomTabNavigator({
-  la: { screen: SignupContainer }
-}, {
-  initialRouteName: 'la',
-  activeColor: '#f0edf6',
-  inactiveColor: '#3e2465',
-  barStyle: { backgroundColor: '#694fff' },
+  Home: { screen: HomeContainer},
+  Categories: { screen: CategoriesContainer},
+
+},
+{
+  defaultNavigationOptions: ({ navigation }) => ({
+    tabBarIcon: ({ focused, horizontal, tintColor }) => {
+      const { routeName } = navigation.state;
+      let IconComponent = Ionicons;
+      let iconName;
+      if (routeName === 'Home') {
+        iconName = `md-home`;
+      } else if (routeName === 'Categories') {
+        iconName = `md-compass`;
+      } else if (routeName === '') {
+        iconName = `ios-checkmark-circle${focused ? '' : '-outline'}`;
+      } else if (routeName === '') {
+        iconName = `ios-checkmark-circle${focused ? '' : '-outline'}`;
+      }
+      return <IconComponent name={iconName} size={27} color={tintColor} />;
+    },
+  }),
+  initialRouteName: 'Home',
+  activeColor: '#72a6fd',
+  inactiveColor: '#bbbbbb',
+  barStyle: { 
+    backgroundColor : '#ffffff'
+  },
 });
 
 const Home = createStackNavigator(
@@ -68,4 +91,4 @@ const RootStack = createSwitchNavigator(
   }
 );
 
-const AppContainer = createAppContainer(RootStack);
+const AppContainer = createAppContainer(Botnav)

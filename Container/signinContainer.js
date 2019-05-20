@@ -10,8 +10,7 @@ export default class SigninContainer extends Component{
     render(){
         
         return(
-            <ScrollView>
-                <View style = {styles.container}>
+            <ScrollView style = {styles.container}>
                     <View style = {styles.logo}><Image style={styles.img_logo} source={require('../assets/images/signup/2.png')}/></View>
                     <InputBoxlogin title = 'Email' placeholder = 'Email' />
                     <InputBoxlogin title = 'Password' placeholder = 'Password'/>
@@ -36,7 +35,6 @@ export default class SigninContainer extends Component{
                             Sign Up 
                         </Text>
                     </TouchableOpacity>    
-                </View>
                 </View>
             </ScrollView>
         )
