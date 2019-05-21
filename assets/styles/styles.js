@@ -7,6 +7,9 @@ export const color  = {
 }
 
 export const styles = StyleSheet.create({
+    bgcolorwhite : {
+        backgroundColor : color.white
+    },
     container : {
         backgroundColor : color.white,
         paddingBottom : 35
@@ -99,7 +102,6 @@ export const styles = StyleSheet.create({
         borderRadius : 10,
     },
     bdContainer : {
-        marginTop : 25,
         paddingBottom : 30,
         marginHorizontal : 20
     },
@@ -126,7 +128,7 @@ export const styles = StyleSheet.create({
         flexDirection : 'row'
     },
     desbcard : {
-        marginRight : 93
+        width : 180
     },
     hCard : {
         fontSize : 20,
@@ -148,18 +150,58 @@ export const styles = StyleSheet.create({
         left : 9,
         top : 8
     },
+    listBdcontainer : {
+        backgroundColor : color.white,
+        paddingBottom : 2,
+        paddingLeft : 25
+    },
     trndCard : {
         flexDirection : 'row',
-        paddingVertical : 35
+        paddingTop : 27,
+        paddingBottom : 20
+    },
+    listtrndContainer : {
+        marginHorizontal : 15
     },
     trndimg : {
         width : 210,
         height : 210,
-        borderRadius : 7
+        borderRadius : 4
     },
     ilovetrnd : {
         height : 30,
         width : 30
+    },
+    colorpaldTrnd : {
+        flexDirection : 'row',
+        justifyContent : 'center',
+        alignItems : 'center'
+    },
+    colorpaloneTrnd : {
+        backgroundColor : '#dcbf85',
+        width : 20,
+        height : 20,
+        borderRadius : 20/2
+    },
+    colorpaltwoTrnd : {
+        backgroundColor : '#8c9e9d',
+        width : 20,
+        height : 20,
+        borderRadius : 20/2,
+        marginLeft : 5
+    },
+    colorpalthreeTrnd : {
+        backgroundColor : '#131514',
+        width : 20,
+        height : 20,
+        borderRadius : 20/2,
+        marginLeft : 5
+    },
+    trndTitle : {
+        marginTop : 6,
+        fontSize : 16,
+        fontWeight : 'bold',
+        color : color.black
     },
     ilovecontainer : {
         position : 'absolute',
@@ -167,8 +209,7 @@ export const styles = StyleSheet.create({
         left : 160
     },
     htrnd : {
-        marginTop : 10,
-        marginBottom : 35,
+        marginTop : 30,
         fontSize : 25,
         color : color.black,
         fontWeight : 'bold'
@@ -176,6 +217,8 @@ export const styles = StyleSheet.create({
     dtrndimg : {
         width : 350,
         height : 225,
+        borderBottomRightRadius: 0,
+        borderBottomLeftRadius: 0,
         borderRadius : 7
     },
     ilovedcontainer : {
@@ -184,7 +227,14 @@ export const styles = StyleSheet.create({
         left : 290
     },
     dtrndCard : {
-        marginBottom : 35
+        marginBottom : 35,
+        marginHorizontal: 25,
+        width : 350,
+        height : 400,
+        borderRadius : 10,
+        backgroundColor : color.white,
+        // shadow
+        elevation: 8
     },
     hcatcontainer : {
         backgroundColor : color.white,

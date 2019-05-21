@@ -71,7 +71,7 @@ const Bestdesign = createStackNavigator(
 const Home = createStackNavigator(
   {
     HomeC: {
-      screen: HomeContainer,
+      screen: DetailTrending,
       navigationOptions: {
         header: null
       },
@@ -93,7 +93,7 @@ const Home = createStackNavigator(
 
 const RootStack = createSwitchNavigator(
   {
-    Signup: DetailBestdesign,
+    Signup: HomeContainer,
     Signin: SigninContainer,
     Home: Botnav
   },
@@ -102,4 +102,4 @@ const RootStack = createSwitchNavigator(
   }
 );
 
-const AppContainer = createAppContainer(RootStack)
+const AppContainer = createAppContainer(Home)

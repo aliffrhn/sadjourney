@@ -14,9 +14,9 @@ export default class DetailTrending extends Component{
                 <View style = {styles.hcontainer}>
                     <Text style = {styles.htrnd}>
                         Trending
-                    </Text>  
-                    <ListDetailtrending />              
+                    </Text>            
                 </View>
+                    <ListDetailtrending />
             </ScrollView>
         )
     }

@@ -5,34 +5,22 @@ import { styles } from '../assets/styles/styles'
 const show_first = [
     {
         key: '1',
-        name:'America',
-        image:require('../assets/images/home/carpet-1853203_1920.jpg')
+        name:'Squarely Balcony',
+        category: 'Balcony',
+        image:require('../assets/images/home/squarely-1354291-unsplash.jpg')
     },
     {
         key: '2',
-        name:'America',
-        image:require('../assets/images/home/chairs-2181960_1920.jpg')
+        name:'Faith Gray',
+        category: 'Living Room',
+        image:require('../assets/images/home/livroom.jpg')
     },
     {
         key: '3',
-        name:'America',
-        image:require('../assets/images/home/couch-447484_1920.jpg')
-    },
-    {
-        key: '4',
-        name:'America',
-        image:require('../assets/images/home/couch-1835923_1920.jpg')
-    },
-    {
-        key: '5',
-        name:'Americano',
-        image:require('../assets/images/home/kitchen-2165756_1920.jpg')
-    },
-    {
-        key: '6',
-        name:'Americano',
-        image:require('../assets/images/home/living-room-2155376_1920.jpg')
-    },
+        name:'Falco Negenman',
+        category: 'Backyard',
+        image:require('../assets/images/home/falco-negenman-676806-unsplash.jpg')
+    }
 ]
 
 export default class ListBestdesign extends Component{
@@ -49,7 +37,7 @@ export default class ListBestdesign extends Component{
                                 {item.name}
                             </Text>
                             <Text style = {{marginTop : 1}}>
-                                23 style design
+                                {item.category}
                             </Text>
                         </View>
                         <View style = {styles.tbtnContainer}>

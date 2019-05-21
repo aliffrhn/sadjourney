@@ -33,18 +33,18 @@ export default class Home extends Component{
                         </Text>
                     </View>
                 </View>
-                <View style = {{backgroundColor : color.white}}>
+                <View style = {styles.bgcolorwhite}>
                     <ListBestdesign />
                 </View>
-                <View style = {styles.hcontainer}>
+                <View style = {styles.listBdcontainer}>
                     <View>
                         <View style = {styles.trndCard}> 
                             <View>
-                                <Text style = {{fontSize : 17, fontWeight : 'bold', color : 'black'}}>
+                                <Text style = {{fontSize : 22, fontWeight : 'bold', color : 'black'}}>
                                     Trending
                                 </Text>
                             </View>
-                            <View style = {{justifyContent : 'flex-end', marginLeft : 190}}>
+                            <View style = {{justifyContent : 'center', alignItems : 'center', marginLeft : 190}}>
                                 <TouchableOpacity onPress = {() => this.props.navigation.navigate('DetailT')} >
                                     <Text style = {{color : color.blue}}>
                                         See More
@@ -52,8 +52,10 @@ export default class Home extends Component{
                                 </TouchableOpacity>
                             </View>
                         </View>
-                        <ListTrending />
-                    </View> 
+                    </View>
+                </View>
+                <View style = {[styles.bgcolorwhite, {paddingBottom : 20}]}>
+                    <ListTrending />
                 </View>
             </ScrollView>
         )
