@@ -93,7 +93,7 @@ const Home = createStackNavigator(
 
 const RootStack = createSwitchNavigator(
   {
-    Signup: HomeContainer,
+    Signup: DetailBestdesign,
     Signin: SigninContainer,
     Home: Botnav
   },

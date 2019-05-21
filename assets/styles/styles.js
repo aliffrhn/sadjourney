@@ -244,16 +244,53 @@ export const styles = StyleSheet.create({
         borderColor: color.blue,
         paddingHorizontal : 25
     },
+    imgdbd : {
+        width : 395,
+        height : 300
+    },
     dBdContainer : {
         backgroundColor : color.white,
         marginHorizontal : 20
     },
     dBdTitle : {
+        marginTop : 20,
         fontSize : 20,
         fontWeight : 'bold',
         color : color.black
     },
     dBdsubTitle : {
-        fontSize : 10,
+        marginTop : 5,
+        fontSize : 15,
+    },
+    colorpaldBd : {
+        flexDirection : 'row',
+        paddingVertical : 30,
+        justifyContent : 'center',
+        alignItems : 'center'
+    },
+    colorpalone : {
+        backgroundColor : '#dcbf85',
+        width : 75,
+        height : 75,
+        borderRadius : 75/2
+    },
+    colorpaltwo : {
+        backgroundColor : '#8c9e9d',
+        width : 75,
+        height : 75,
+        borderRadius : 75/2,
+        marginLeft : 20
+    },
+    colorpalthree : {
+        backgroundColor : '#131514',
+        width : 75,
+        height : 75,
+        borderRadius : 75/2,
+        marginLeft : 20
+    },
+    descriptiondBd : {
+        fontSize : 16,
+        textAlign : 'justify',
+        lineHeight : 21
     }
 }) 
