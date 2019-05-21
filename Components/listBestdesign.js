@@ -53,7 +53,7 @@ export default class ListBestdesign extends Component{
                             </Text>
                         </View>
                         <View style = {styles.tbtnContainer}>
-                            <TouchableOpacity style = {styles.tCard}>
+                            <TouchableOpacity style = {styles.tCard} onPress = {()=> this.props.navigation.navigate('Bestdesign')}>
                                 <Image style = {styles.tbtnCard} source = {require('../assets/icons/next.png')}/>
                             </TouchableOpacity>
                         </View>

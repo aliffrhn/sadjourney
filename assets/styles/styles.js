@@ -244,4 +244,16 @@ export const styles = StyleSheet.create({
         borderColor: color.blue,
         paddingHorizontal : 25
     },
+    dBdContainer : {
+        backgroundColor : color.white,
+        marginHorizontal : 20
+    },
+    dBdTitle : {
+        fontSize : 20,
+        fontWeight : 'bold',
+        color : color.black
+    },
+    dBdsubTitle : {
+        fontSize : 10,
+    }
 }) 
