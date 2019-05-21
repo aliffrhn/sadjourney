@@ -254,7 +254,7 @@ export const styles = StyleSheet.create({
     },
     dBdTitle : {
         marginTop : 20,
-        fontSize : 20,
+        fontSize : 22,
         fontWeight : 'bold',
         color : color.black
     },
@@ -291,6 +291,18 @@ export const styles = StyleSheet.create({
     descriptiondBd : {
         fontSize : 16,
         textAlign : 'justify',
-        lineHeight : 21
+        lineHeight : 22
+    },
+    otherDesignheader : {
+        fontSize : 17,
+        marginVertical : 22,
+        fontWeight : 'bold',
+        color : color.black
+    },
+    imglistOtherd : {
+        borderRadius : 10,
+        marginHorizontal : 10,
+        width : 150,
+        height : 150
     }
 }) 

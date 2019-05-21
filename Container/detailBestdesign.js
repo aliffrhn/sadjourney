@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import { Text, View, Image, ScrollView } from 'react-native'
+import { Text, View, Image, ScrollView, TouchableOpacity } from 'react-native'
 import { styles } from '../assets/styles/styles'
+
+import ListOtherdesign from '../Components/listOtherdesign'
 
 export default class DetailBestdesign extends Component{
 
@@ -28,7 +30,19 @@ export default class DetailBestdesign extends Component{
                         Theme of this room is American style. 
                         The color is very soft and beautiful.
                     </Text>
+                    <TouchableOpacity style = {styles.btnSignup} onPress = {() => this.props.navigation.navigate('Home')}>
+                        <View style = {styles.btnText}>
+                            <Text style = {styles.btnStext}>
+                            Consultation
+                            </Text>
+                        </View>
+                    </TouchableOpacity>
+                    <Text style={styles.otherDesignheader}>
+                        Other Design
+                    </Text>
                 </View>
+                <ListOtherdesign/>
+                <View style={{paddingBottom : 20}}/>
             </ScrollView>
         )
     }
