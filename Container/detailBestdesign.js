@@ -42,7 +42,7 @@ export default class DetailBestdesign extends Component{
                     </Text>
                 </View>
                 <ListOtherdesign/>
-                <View style={{paddingBottom : 20}}/>
+                <View style={styles.padBot20}/>
             </ScrollView>
         )
     }

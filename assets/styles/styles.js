@@ -10,6 +10,12 @@ export const styles = StyleSheet.create({
     bgcolorwhite : {
         backgroundColor : color.white
     },
+    colorblue : {
+        color : color.blue
+    },
+    padBot20 : {
+        paddingBottom : 20
+    },
     container : {
         backgroundColor : color.white,
         paddingBottom : 35
@@ -56,6 +62,12 @@ export const styles = StyleSheet.create({
         justifyContent : 'center',
         marginTop : 10,
         flexDirection : 'row'
+    },
+    haveacc : {
+        marginRight : 5
+    },
+    linknothacc : {
+        marginRight : 5
     },
     aForgotp : {
         marginTop : 30,
@@ -160,6 +172,16 @@ export const styles = StyleSheet.create({
         paddingTop : 27,
         paddingBottom : 20
     },
+    trndHeader : {
+        fontSize : 22,
+        fontWeight : 'bold',
+        color : color.black
+    },
+    trndsmContainer : {
+        justifyContent : 'center',
+        alignItems : 'center',
+        marginLeft : 190
+    },
     listtrndContainer : {
         marginHorizontal : 15
     },
@@ -235,6 +257,37 @@ export const styles = StyleSheet.create({
         backgroundColor : color.white,
         // shadow
         elevation: 8
+    },
+    dtrndimgCard : {
+        justifyContent : 'center',
+        alignItems : 'center'
+    },
+    dtrnddesCard : {
+        marginHorizontal : 10
+    },
+    dtrndheadCard : {
+        flexDirection : 'row',
+        marginTop : 8
+    },
+    dtrndboxHeader : {
+        width : 250
+    },
+    dtrndheader : {
+        fontSize : 19,
+        fontWeight : 'bold',
+        color : color.black
+    },
+    dtrnddDesc : {
+        textAlign : 'justify',
+        width : 320,
+        lineHeight : 20,
+        marginTop : 12
+    },
+    dtrnddPrice : {
+        fontSize : 17,
+        fontWeight : 'bold',
+        color : color.black,
+        marginTop : 8
     },
     hcatcontainer : {
         backgroundColor : color.white,

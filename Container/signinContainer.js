@@ -15,7 +15,7 @@ export default class SigninContainer extends Component{
                     <InputBoxlogin title = 'Email' placeholder = 'Email' />
                     <InputBoxlogin title = 'Password' placeholder = 'Password'/>
                     <TouchableOpacity style = {styles.aForgotp} onPress={() => this.props.navigation.navigate('')}>
-                        <Text style = {{color : color.blue}}>
+                        <Text style = {styles.colorblue}>
                             Forgot Password?
                         </Text>
                     </TouchableOpacity>
@@ -27,11 +27,11 @@ export default class SigninContainer extends Component{
                         </View>
                     </TouchableOpacity>
                     <View style = {styles.hlinkSignin}>
-                    <Text style = {{marginRight : 5}}>
+                    <Text style = {styles.linknothacc}>
                         Don't Have an account? 
                     </Text>
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('Signin')}>
-                        <Text style={{color : color.blue}}>
+                        <Text style={styles.colorblue}>
                             Sign Up 
                         </Text>
                     </TouchableOpacity>    

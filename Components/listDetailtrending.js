@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, Image, FlatList, TouchableOpacity } from 'react-native'
-import { styles, color } from '../assets/styles/styles'
+import { styles } from '../assets/styles/styles'
 
 const show_first = [
     {
@@ -26,7 +26,7 @@ export default class ListDetailtrending extends Component{
         
         return(
             <View style = {styles.dtrndCard}>
-                <View style = {{justifyContent : 'center', alignItems : 'center'}}>
+                <View style = {styles.dtrndimgCard}>
                     <Image style={styles.dtrndimg} source={item.image}/>
                     <View style={styles.ilovedcontainer}>
                         <TouchableOpacity>
@@ -34,10 +34,10 @@ export default class ListDetailtrending extends Component{
                         </TouchableOpacity>
                     </View>
                 </View>
-                <View style = {{marginHorizontal : 10}}>
-                    <View style= {{flexDirection : 'row', marginTop : 8}}>
-                        <View style = {{width : 250}}>
-                            <Text style = {{fontSize : 19, fontWeight : 'bold', color : color.black}}>
+                <View style = {styles.dtrnddesCard}>
+                    <View style= {styles.dtrndheadCard}>
+                        <View style = {styles.dtrndboxHeader}>
+                            <Text style = {styles.dtrndheader}>
                                 {item.name}
                             </Text>
                         </View>
@@ -47,14 +47,14 @@ export default class ListDetailtrending extends Component{
                             <View style={styles.colorpalthreeTrnd}/>
                         </View> 
                     </View>
-                    <Text style = {{textAlign : 'justify', width : 320, lineHeight : 20, marginTop : 12}}>
+                    <Text style = {styles.dtrnddDesc}>
                         This is a design living room for 4 x 4 m. 
                         Theme of this room is American style. 
                         The color is very soft and beautiful. 
                         Theme of this room is American style. 
                         The color is very soft and beautiful.
                     </Text>
-                    <Text style = {{fontSize : 17, fontWeight : 'bold', color : color.black,  marginTop : 8}}>
+                    <Text style = {styles.dtrnddPrice}>
                         Rp.500.000,00
                     </Text>
                 </View>

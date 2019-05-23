@@ -12,7 +12,9 @@ export default class SignupContainer extends Component{
         return(
             <ScrollView>
                 <View style = {styles.container}>
-                <View style = {styles.logo}><Image style={styles.img_logo} source={require('../assets/images/signup/2.png')}/></View>
+                <View style = {styles.logo}>
+                    <Image style={styles.img_logo} source={require('../assets/images/signup/2.png')}/>
+                </View>
                 <InputBoxlogin style = {{marginTop : 50}} title = 'Full Name'  placeholder = 'Full name'/>
                 <InputBoxlogin title = 'Handphone' keytype = 'number-pad' placeholder = 'Example: 0881228922984'/>
                 <InputBoxlogin title = 'Email' placeholder = 'Email'/>
@@ -32,11 +34,11 @@ export default class SignupContainer extends Component{
                 </View>
                 </TouchableOpacity>
                 <View style = {styles.hlinkSignin}>
-                    <Text style = {{marginRight : 5}}>
+                    <Text style = {styles.haveacc}>
                         Have an account? 
                     </Text>
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('Signin')}>
-                        <Text style={{color : color.blue}}>
+                        <Text style={styles.colorblue}>
                             Sign In 
                         </Text>
                     </TouchableOpacity>    

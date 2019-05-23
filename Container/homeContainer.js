@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View, ScrollView, Image, Text, TouchableOpacity } from 'react-native'
-import { styles, color } from '../assets/styles/styles'
+import { styles } from '../assets/styles/styles'
 
 // Import Components
 import ListBestdesign from '../Components/listBestdesign'
@@ -40,13 +40,13 @@ export default class Home extends Component{
                     <View>
                         <View style = {styles.trndCard}> 
                             <View>
-                                <Text style = {{fontSize : 22, fontWeight : 'bold', color : 'black'}}>
+                                <Text style = {styles.trndHeader}>
                                     Trending
                                 </Text>
                             </View>
-                            <View style = {{justifyContent : 'center', alignItems : 'center', marginLeft : 190}}>
+                            <View style = {styles.trndsmContainer}>
                                 <TouchableOpacity onPress = {() => this.props.navigation.navigate('DetailT')} >
-                                    <Text style = {{color : color.blue}}>
+                                    <Text style = {styles.colorblue}>
                                         See More
                                     </Text>
                                 </TouchableOpacity>
