@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, Image, FlatList, TouchableOpacity } from 'react-native'
-import { styles, color } from '../assets/styles/styles'
+import { styles } from '../assets/styles/styles'
 
 const show_first = [
     {
@@ -20,7 +20,7 @@ const show_first = [
     },
 ]
 
-export default class ListDetailtrending extends Component{
+export default class ListDetailcategories extends Component{
 
     _renderItems(item){
         
@@ -54,18 +54,9 @@ export default class ListDetailtrending extends Component{
                         Theme of this room is American style. 
                         The color is very soft and beautiful.
                     </Text>
-                    <View style = {styles.botcardDesc}>
-                        <View style = {styles.dtrndpCotainer}>
-                            <Text style = {styles.dtrnddPrice}>
-                                Rp.500.000,00
-                            </Text>
-                        </View>
-                        <View style = {styles.botcardCat}>
-                            <Text>
-                                Living room
-                            </Text>
-                        </View>
-                    </View>
+                    <Text style = {styles.dtrnddPrice}>
+                        Rp.500.000,00
+                    </Text>
                 </View>
             </View>
         )

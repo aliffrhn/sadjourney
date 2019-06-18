@@ -11,6 +11,7 @@ import HomeContainer from './Container/homeContainer'
 import DetailTrending from './Container/detailTrending'
 import CategoriesContainer from './Container/categoriesContainer'
 import DetailBestdesign from './Container/detailBestdesign'
+import DetailCategories from './Container/detailCategories'
 
 export default class App extends Component{
   
@@ -57,25 +58,9 @@ const Botnav = createMaterialBottomTabNavigator({
   },
 });
 
-const Bestdesign = createStackNavigator(
+const Stack = createStackNavigator(
   {
-    Detail: {
-      screen: DetailBestdesign
-    }
-  },
-  {
-    initialRouteName : 'Detail'
-  }
-)
-
-const Home = createStackNavigator(
-  {
-    HomeC: {
-      screen: DetailTrending,
-      navigationOptions: {
-        header: null
-      },
-    },
+    Botnavv : Botnav,
     DetailT: {
       screen: DetailTrending,
       navigationOptions: {
@@ -84,22 +69,21 @@ const Home = createStackNavigator(
         } 
       },
     },
+    DetailBestdesign,
+    DetailCategories
   },
   {
-    initialRouteName: 'HomeC',
+    initialRouteName: 'Botnavv',
   },
   
 );
 
-const RootStack = createSwitchNavigator(
+const RootSwitch = createSwitchNavigator(
   {
-    Signup: HomeContainer,
+    Stack,
+    Signup: SignupContainer,
     Signin: SigninContainer,
-    Home: Botnav
-  },
-  {
-    initialRouteName: 'Signup',
   }
 );
 
-const AppContainer = createAppContainer(Home)
+const AppContainer = createAppContainer(RootSwitch)

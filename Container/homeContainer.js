@@ -34,7 +34,7 @@ export default class Home extends Component{
                     </View>
                 </View>
                 <View style = {styles.bgcolorwhite}>
-                    <ListBestdesign />
+                    <ListBestdesign onPressNavigate={() => this.props.navigation.navigate('DetailBestdesign')} />
                 </View>
                 <View style = {styles.listBdcontainer}>
                     <View>

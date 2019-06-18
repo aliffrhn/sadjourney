@@ -283,11 +283,20 @@ export const styles = StyleSheet.create({
         lineHeight : 20,
         marginTop : 12
     },
+    botcardDesc : {
+        flexDirection : 'row'
+    },
+    dtrndpCotainer : {
+        width : 242
+    },
     dtrnddPrice : {
         fontSize : 17,
         fontWeight : 'bold',
         color : color.black,
         marginTop : 8
+    },
+    botcardCat : {
+        justifyContent : 'flex-end'
     },
     hcatcontainer : {
         backgroundColor : color.white,
@@ -407,5 +416,17 @@ export const styles = StyleSheet.create({
         marginHorizontal : 10,
         width : 150,
         height : 150
-    }
+    },
+    detailCatcontainer : {
+        backgroundColor : color.white,
+        paddingBottom : 35,
+        paddingTop : 1,
+        paddingLeft : 25
+    },
+    hCategories : {
+        marginTop : 30,
+        fontSize : 25,
+        color : color.black,
+        fontWeight : 'bold'
+    },
 }) 
