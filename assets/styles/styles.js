@@ -115,7 +115,8 @@ export const styles = StyleSheet.create({
     },
     bdContainer : {
         paddingBottom : 30,
-        marginHorizontal : 20
+        marginLeft : 10,
+        marginRight : 5
     },
     desContainer : {
         position : 'absolute',

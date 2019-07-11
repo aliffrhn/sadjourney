@@ -60,7 +60,12 @@ const Botnav = createMaterialBottomTabNavigator({
 
 const Stack = createStackNavigator(
   {
-    Botnavv : Botnav,
+    Botnavv : {
+      screen: Botnav,
+      navigationOptions: {
+        header : null
+      }
+    },
     DetailT: {
       screen: DetailTrending,
       navigationOptions: {

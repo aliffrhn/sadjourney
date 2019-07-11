@@ -33,7 +33,7 @@ export default class DetailBestdesign extends Component{
                     <TouchableOpacity style = {styles.btnSignup} onPress = {() => this.props.navigation.navigate('Home')}>
                         <View style = {styles.btnText}>
                             <Text style = {styles.btnStext}>
-                            Consultation
+                            Book now
                             </Text>
                         </View>
                     </TouchableOpacity>
